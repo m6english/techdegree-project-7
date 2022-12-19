@@ -268,6 +268,24 @@ input::after {
     border: solid 2px rgb(173, 173, 173);
 }
 
+input:checked {
+    background-color: rgb(68, 69, 151);
+}
+
+input::before {
+    content: "OFF";
+    position: relative;
+    top: 20%;
+    left: 55%;
+    color: white;
+}
+
+input:checked::before {
+    content: "ON";
+    color: white;
+    left: 10%;
+}
+
 input:checked::after {
     left: 80%;
 }
