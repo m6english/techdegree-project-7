@@ -90,7 +90,7 @@
 
 .widget-container-full,
 .widget-container-half {
-    width: 95vw;
+    width: 93vw;
 }
 
 /* ======= dashboard tab ======= */
@@ -179,6 +179,10 @@ section {
     height: 150px;
     padding: 15px 5px;
     text-align: center;
+}
+
+.arrow {
+    display: none;
 }
 
 .members-link {
@@ -322,33 +326,99 @@ input:checked::after {
             "header header"
             "navigation main";
     }
+
     .main {
         grid-template-columns: 50%;
     }
-    .traffic,
-    .social {
-        grid-column: 1 / span 2;
+    
+    .navigation {
+        display: grid;
+        grid-template-rows: repeat(4, min-content);
+        height: 100%;
+        flex-direction: column;
+        padding-top: 10px;
     }
-    .daily,
-    .members,
-    .message {
+    
+    .daily {
         grid-column: 1 / span 1;
+        border-right: 1px solid rgb(211, 211, 211);
     }
-    .mobile,
-    .activity,
-    .settings {
+
+    .mobile {
         grid-column: 2 / span 1;
     }
+
+    .tab {
+        width: 80%;
+    }
+
+    .headline {
+        width: 20%;
+    }
+    
+    .alert,
+    .main-header,
+    .activity,
+    .settings,
+    .members,
+    .message,
+    .traffic,
+    .social  {
+        grid-column: 1 / span 2;
+    }
     .widget-container-full {
-        width: 90vw;
+        width: 86vw;
     }
     .widget-container-half {
-        width: 45vw;
+        width: 43vw;
     }
+    .members-container {
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+
+    .members-image {
+        margin-right: 10px;
+    }
+
+    .arrow {
+        color: rgb(173, 173, 173);
+    }
+
+    .members-text,
+    .activity-text {
+        text-align: left;
+        margin-right: auto;
+    }
+
     .social-widget {
         display: flex;
     }
     .social-container {
         width: 33%;
+    }
+
+    .toggle-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .alert {
+        margin: 15px 2.5%;
+    }
+    .members,
+    .message {
+        grid-column: 1 / span 1;
+        border-right:  1px solid rgb(211, 211, 211);
+    }
+    .activity,
+    .settings {
+        grid-column: 2 / span 1;
+    }
+    .toggle-container {
+        width: 75%;
+        margin-bottom: 10px;
     }
 }
