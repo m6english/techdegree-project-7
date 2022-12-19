@@ -393,6 +393,7 @@ input:checked::after {
     }
 
     .arrow {
+        display: block;
         color: rgb(173, 173, 173);
     }
 
