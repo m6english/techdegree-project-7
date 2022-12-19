@@ -98,9 +98,12 @@
     grid-area: main;
 }
 
-.widget-container-full,
+.widget-container-full {
+    width: 98vw;
+}
+
 .widget-container-half {
-    width: 93vw;
+    width: 98vw;
 }
 
 /* ======= dashboard tab ======= */
@@ -132,6 +135,15 @@
     color: white;
     padding: 10px;
     border-radius: 7px;
+}
+
+.alert-banner-close {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.alert-banner-close:hover {
+    transform: scale(1.3);
 }
 
 /* ======= taffic links ======= */
@@ -377,10 +389,10 @@ input:checked::after {
         grid-column: 1 / span 2;
     }
     .widget-container-full {
-        width: 86vw;
+        width: 90vw;
     }
     .widget-container-half {
-        width: 43vw;
+        width: 44vw;
     }
     .members-container {
         display: flex;
@@ -431,5 +443,12 @@ input:checked::after {
     .toggle-container {
         width: 75%;
         margin-bottom: 10px;
+    }
+
+    .widget-container-full {
+        width: 93vw;
+    }
+    .widget-container-half {
+        width: 45vw;
     }
 }
