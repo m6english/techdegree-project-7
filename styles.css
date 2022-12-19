@@ -27,10 +27,29 @@
     display: flex;
 }
 
+@keyframes ring {
+    30% {
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: rotate(15deg);
+    }
+}
+
 .bell {
     fill: white;
     padding: 0 10px;
     width: 50px;
+    transition: .3s;
+}
+
+.bell:hover {
+    animation: ring 1.2s linear backwards;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.header-line {
     border-right: 1px solid rgb(158, 158, 158);
 }
 
@@ -325,5 +344,11 @@ input:checked::after {
     }
     .widget-container-half {
         width: 45vw;
+    }
+    .social-widget {
+        display: flex;
+    }
+    .social-container {
+        width: 33%;
     }
 }
