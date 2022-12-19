@@ -36,11 +36,21 @@
     }
 }
 
-.bell {
+.bell-icon {
     fill: white;
     padding: 0 10px;
     width: 50px;
     transition: .3s;
+}
+
+#notifications {
+    background: greenyellow;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+    right: -35px;
 }
 
 .bell:hover {
