@@ -12,6 +12,13 @@
         "navigation"
         "main";
 }
+
+.widget-container-full,
+.widget-container-half {
+    position: relative;
+    width: 93vw;
+    height: 30vh;
+}
 /* ======= header bar ======= */
 .page-header {
     grid-area: header;
@@ -96,14 +103,6 @@
 .main {
     display: grid;
     grid-area: main;
-}
-
-.widget-container-full {
-    width: 98vw;
-}
-
-.widget-container-half {
-    width: 98vw;
 }
 
 /* ======= dashboard tab ======= */
@@ -388,6 +387,7 @@ input:checked::after {
     .social  {
         grid-column: 1 / span 2;
     }
+
     .widget-container-full {
         width: 90vw;
     }

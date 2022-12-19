@@ -23,6 +23,7 @@ let trafficData = {
 };
 
 let trafficOptions = {
+    maintainAspectRatio: false,
     backgroundColor: 'rgba(112, 104, 201, .5)',
     fill: true,
     aspectRatio: 2.5,
@@ -61,6 +62,7 @@ const dailyData = {
 };
 
 const dailyOptions = {
+    maintainAspectRatio: false,
     scales: {
         y: {
             beginAtZero: true
@@ -98,7 +100,7 @@ const mobileData = {
 }
 
 const mobileOptions = {
-    aspectRatio: 1.9,
+    maintainAspectRatio: false,
     plugins: {
         legend: {
             position: 'right',
